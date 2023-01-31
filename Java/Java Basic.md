@@ -484,3 +484,38 @@ The high 8 bits will be lost.
   - When decorating reference variables, **reference cannot be changed**, **but the content it points can be changed.**
   - The method decorated by **final**, JVM will try to inline it to improve efficiency.
   - Constants modified by **final** will be stored in the constant pool during compilation.
+
+### static
+
+- **Using:**
+  - **Static variables** and **static methods**. That is, variables/methods modified by static **belong to the static resources of the class and are shared by class instances**.
+  - **Static block:** initialization operation
+  - **Static inner class:** Specifies to import static resources in a class, and does not need to use the class name, you can use the resource name directly. 
+- **Meaning:**
+  - Specifies to import static resources in a class, and does not need to use the class name, you can use the resource name directly.
+  - Create static blocks to optimize program performance. Because static blocks will only be executed once when the class is loaded.
+- **Features:**
+  - The static variables and methods only are executed once when the class is loaded.
+  - The static variables and methods are allocated memory.
+  - The static variables or methods have priority over objects.
+- **Tips:**
+  - **static** only can access **static**
+  - **Non-static** can access **non-static** and static.
+
+### This
+
+- **Using:**
+  - point to the current object.
+  - refer to the class constructor function.
+  - Distinguish the same name. (in the function)
+
+### Super
+
+- **Using:**
+  - point to the parent.
+  - When the member variable or method in the subclass has the same name as the member variable or method in the parent class, use super to distinguish.
+  - refer to the parent class constructor function.
+
+**&, &&, break, continue, return**
+
+## Exception Handling
