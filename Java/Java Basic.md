@@ -519,3 +519,8 @@ The high 8 bits will be lost.
 **&, &&, break, continue, return**
 
 ## Exception Handling
+
+### Introduction
+
+Java Exception is a consistent mechanism for identifying and responding to errors.
+Java Exception can keep exception handling code and normal business code seperately
